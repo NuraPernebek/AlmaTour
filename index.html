@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toy Store</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+    <div class="navbar-center">
+       <span class="nav-icon">
+           <i class="fas fa-bars"></i>
+       </span> 
+       
+        <div class="cart-btn">
+           <span class="nav-icon">
+               <i class="fas fa-cart-plus"></i>
+           </span> 
+           <div class="cart-items">0</div>
+        </div>
+    </div>
+    <!-- Menu Items -->
+    <div class="nav-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+    <!-- end of navbar -->
+    <!-- poster-->
+    <header class="hero">
+        <div class="banner">
+           <h1 class="banner-title">Toy Store</h1>
+           <button class="banner-btn">Shop now</button>  
+        </div>
+    </header>
+    <!-- end of poster-->
+    <!-- products -->
+    <section class="products">
+        <div class="section-title">
+            <h2>Our Products</h2>
+        </div>
+        <div class="products-center">
+            <!-- Product 1 -->
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://www.lego.com/cdn/cs/set/assets/blt8fa82af2949ffc86/31139.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart"></i>
+                        add to cart
+                    </button>
+                </div>
+                <h3>Product 1</h3>
+                <h4>$40.99</h4>
+            </article>
+            <!-- Product 2 -->
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://www.lego.com/cdn/cs/set/assets/blt468d63d0eb6c81a8/42096.jpg?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="2">
+                        <i class="fas fa-shopping-cart"></i>
+                        add to cart
+                    </button>
+                </div>
+                <h3>Product 2</h3>
+                <h4>$93.99</h4>
+            </article>
+            <!-- Repeat this structure for more products -->
+            
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://www.lego.com/cdn/cs/set/assets/bltb94632aeb971eb91/10294.jpg?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="3">
+                        <i class="fas fa-shopping-cart"></i>
+                        add to cart
+                    </button>
+                </div>
+                <h3>Product 3</h3>
+                <h4>$100.99</h4>
+            </article>
+        </div>
+    </section> 
+    <!-- end of products -->
+    <!-- cart -->
+        <div class="cart-overlay">
+            <div class="cart">
+               <span class="close-cart">
+                   <i class="fas fa-window-close"></i>
+               </span> 
+               <h2>Your cart</h2>
+               <div class="cart-content">
+                  <!-- cart item -->
+                    <!--<div class="cart-item">
+                      
+                    </div>
+                  <!-- end of cart item --> 
+               </div>
+                <div class="cart-footer">
+                    <h3>your total: $ <span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">clear cart</button>
+                </div>
+            </div>
+        </div>
+    <!-- end of cart-->
+    <!-- java script -->
+   <script src="app.js"></script> 
+  
+</body>
+</html>
